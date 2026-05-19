@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "Wastecontrol - Logistic",
+    "slug": "wastecontrol-logistic",
+    "version": "1.18.18",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-main.png",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "icon": "./assets/iOS_logo.png",
+      "supportsTablet": false,
+      "buildNumber": "2",
+      "bundleIdentifier": "com.wastecontrol.logistic",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Your current location will be displayed on the map and used for directions"
+      },
+      "config": {
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+      },
+      "entitlements": {
+        "aps-environment": "production"
+      }
+    },
+    "android": {
+      "icon": "./assets/logo.png",
+      "package": "com.wastecontrol.logistic.app",
+      "versionCode": 34,
+      "targetSdkVersion": 34,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Waste control to use your location."
+        }
+      ],
+      "expo-asset",
+      "expo-font",
+      "expo-localization",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    }
+  }
+}
